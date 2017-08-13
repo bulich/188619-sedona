@@ -18,8 +18,8 @@
         <li><a href="#">Фото и видео</a></li>
       </ul>
       <ul class="site-navigation right">
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Фото и видео</a></li>
+        <li><a href="#">Карта штата</a></li>
+        <li><a href="#">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -39,7 +39,7 @@
         <span class="features-number">- 1 -</span>
         <p>Седона- не аттракцион для туристов, там течет своя жизнь</p>
       </div>
-      <img class="features-photo" src="img/features-photo-1.svg" alt="дом в Седоне" width="66%" height="200">
+      <img class="features-photo" src="img/features-photo-1.svg" alt="дом в Седоне" width="600" height="200">
       <ul class="facilities-list">
         <li class="facilities-item">
           <img src="img/facilities-icon-1.svg" alt="иконка дома" width="100" height="100">
@@ -57,7 +57,7 @@
           <p>Не только китайского, но и местного производства!</p>
         </li>
       </ul>
-      <img class="features-photo" src="img/features-photo-2.svg" alt="мост Дьявола" width="66%" height="200">
+      <img class="features-photo" src="img/features-photo-2.svg" alt="мост Дьявола" width="600" height="200">
       <div class="features-fact second">
         <b>Там есть мост Дьвола</b>
         <span class="features-number">- 2 -</span>
@@ -91,21 +91,25 @@
       <div class="searching-form">
         <h3>Поиск гостиницы в Седоне</h3>
         <form action="#" method="get">
-          <label for="arrival-date">Дата заезда:</label>
-          <input class="searching-item" name="arrival-date" id="arrival-date" type="text" placeholder="24 апреля 2017">
-          <button class="calendar-button"></button>
-          <label for="departure-date">Дата выезда:</label>
-          <input class="searching-item" name="departure-date" id="departure-date" type="text" placeholder="4 июля 2017">
-          <button class="calendar-button"></button>
-          <label for="adults-number">Взрослые:</label>
-          <button class="plus-button">+</button>
-          <input class="searching-item" name="adults-number" id="adults-number" type="text" placeholder="2">
-          <button class="minus-button">-</button>
-          <label for="childs-number">Дети:</label>
-          <button class="plus-button">+</button>
-          <input class="searching-item" name="childs-number" id="childs-number" type="text" placeholder="0">
-          <button class="minus-button">-</button>
-          <input class="search-button" type="submit" value="Найти" />
+          <fieldset class="date-input">
+            <label for="arrival-date">Дата заезда:</label>
+            <input class="searching-item" name="arrival-date" id="arrival-date" type="text" placeholder="24 апреля 2017">
+            <button class="calendar-button"></button>
+            <label for="departure-date">Дата выезда:</label>
+            <input class="searching-item" name="departure-date" id="departure-date" type="text" placeholder="4 июля 2017">
+            <button class="calendar-button"></button>
+          </fieldset>
+          <fieldset class="mens">
+            <label for="adults-number">Взрослые:</label>
+            <button class="plus-button">+</button>
+            <input class="searching-item" name="adults-number" id="adults-number" type="text" placeholder="2">
+            <button class="minus-button">-</button>
+            <label for="childs-number">Дети:</label>
+            <button class="plus-button">+</button>
+            <input class="searching-item" name="childs-number" id="childs-number" type="text" placeholder="0">
+            <button class="minus-button">-</button>
+            <input class="search-button" type="submit" value="Найти">
+          </fieldset>
         </form>
       </div>
       <img class="background-map" src="img/background-map.svg" alt="Карта города" width="1200" height="200">
@@ -118,7 +122,7 @@
       <li><a class="social-button" href="#">Фейсбук</a></li>
       <li><a class="social-button" href="#">Инстаграм</a></li>
     </ul>
-    <span class="dev-info">Website by <img src="img/html-academy-logo.png" width="100" height="100"> </span>
+    <span class="dev-info">Website by <img src="img/html-academy-logo.png" width="100" height="100" alt="html academy logo"> </span>
   </footer>
 
   <script src="js/script.js"></script>
