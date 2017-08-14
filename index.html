@@ -3,39 +3,39 @@
 
 <head>
   <meta charset="utf-8">
+  <title>HTML Academy: Sedona</title>
   <meta name="keywords" content="sedona, седона, аризона, поиск жилья">
   <meta name="description" content="Информационный сайт города Седона, штат Аризона.">
-  <title>HTML Academy: Sedona</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <img class="main-logo" src="img/logo.svg" width="200" height="200" alt="Логотип Sedona">
+      <a href="index.html"><img class="main-logo" src="img/logo.svg" width="200" height="200" alt="Логотип Sedona"></a>
       <ul class="site-navigation left">
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
       </ul>
       <ul class="site-navigation right">
         <li><a href="#">Карта штата</a></li>
-        <li><a href="#">Гостиницы</a></li>
+        <li><a href="catalog.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="main-container">
-    <h1 class="visually-hidden">город Седона</h1>
+
     <section class="intro">
       <img class="greetings-image" src="img/intro.svg" alt="Добро пожаловать в Седону" width="1200" height="400">
       <p class="intro-information">Седона- небольшой городок в Аризоне, заслуживающий большего!</p>
     </section>
 
     <section class="features">
-      <h2 class="visually-hidden">Приемущества</h2>
+
       <p class="features-preview">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       <div class="features-fact first">
-        <b>Настоящий городок</b>
+        <h3>Настоящий городок</h3>
         <span class="features-number">- 1 -</span>
         <p>Седона- не аттракцион для туристов, там течет своя жизнь</p>
       </div>
@@ -59,7 +59,7 @@
       </ul>
       <img class="features-photo" src="img/features-photo-2.svg" alt="мост Дьявола" width="600" height="200">
       <div class="features-fact second">
-        <b>Там есть мост Дьвола</b>
+        <h3>Там есть мост Дьвола</h3>
         <span class="features-number">- 2 -</span>
         <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
       </div>
@@ -75,7 +75,7 @@
           <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
         <li class="features-item">
-          <b>Мало туристов</b>
+          <h3>Мало туристов</h3>
           <span class="features-number">- 5 -</span>
           <p>Большинство едент в Гранд Каньон и толпится там</p>
         </li>
@@ -83,21 +83,21 @@
     </section>
 
     <section class="hotels-searching">
-      <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
+
       <div class="searching-info">
-        <b>Заинтересовались?</b><br>
+        <h3>Заинтересовались?</h3>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       </div>
       <div class="searching-form">
-        <h3>Поиск гостиницы в Седоне</h3>
+        <button class="searching-button">Поиск гостиницы в Седоне</button>
         <form action="#" method="get">
           <fieldset class="date-input">
             <label for="arrival-date">Дата заезда:</label>
             <input class="searching-item" name="arrival-date" id="arrival-date" type="text" placeholder="24 апреля 2017">
-            <button class="calendar-button"></button>
+            <button class="calendar-button">Календарь</button>
             <label for="departure-date">Дата выезда:</label>
             <input class="searching-item" name="departure-date" id="departure-date" type="text" placeholder="4 июля 2017">
-            <button class="calendar-button"></button>
+            <button class="calendar-button">Календарь</button>
           </fieldset>
           <fieldset class="mens">
             <label for="adults-number">Взрослые:</label>
@@ -122,7 +122,10 @@
       <li><a class="social-button" href="#">Фейсбук</a></li>
       <li><a class="social-button" href="#">Инстаграм</a></li>
     </ul>
-    <span class="dev-info">Website by <img src="img/html-academy-logo.png" width="100" height="100" alt="html academy logo"> </span>
+    <div class="dev-info">
+      <span> Website by </span>
+      <a href="https://htmlacademy.ru/intensive" target="blank"><img src="img/html-academy-logo.png" width="100" height="100" alt="html academy logo"></a>
+    </div>
   </footer>
 
   <script src="js/script.js"></script>
