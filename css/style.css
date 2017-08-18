@@ -1,0 +1,25 @@
+body {
+ font-size: 14px;
+ line-height: 100%;
+ color:#000000;
+ font-weight: bold;
+ font-family: Arial, Verdana, sans-serif;
+}
+
+.features h3 {
+ font-size: 30px;
+ line-height: 100%;
+ color:#000000;
+ font-weight: bold;
+}
+
+.visually-hidden {
+ position: absolute;
+ width: 1px;
+ height: 1px;
+ margin: -1px;
+ border: 0;
+ padding: 0;
+ clip: rect(0 0 0 0);
+ overflow: hidden;
+}
