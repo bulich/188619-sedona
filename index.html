@@ -4,9 +4,11 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Sedona</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <meta name="keywords" content="sedona, седона, аризона, поиск жилья">
   <meta name="description" content="Информационный сайт города Седона, штат Аризона.">
-  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -68,12 +70,12 @@
 
         <ul class="features-list">
           <li class="features-item">
-            <b>Небольшая площадь</b>
+            <h3>Небольшая площадь</h3>
             <span class="features-number">- 3 -</span>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
           <li class="features-item">
-            <b>Красивая дорога</b>
+            <h3>Красивая дорога</h3>
             <span class="features-number">- 4 -</span>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
@@ -88,7 +90,7 @@
     <section class="hotels-searching">
 
       <div class="searching-info">
-        <h3>Заинтересовались?</h3>
+        <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       </div>
 
@@ -99,7 +101,7 @@
             <label for="arrival-date">Дата заезда:</label>
             <input class="searching-item" name="arrival-date" id="arrival-date" type="text" placeholder="24 апреля 2017">
             <button class="calendar-button" type="button">
-              <img src="img/calendar.svg" width="21" height="22" alt="Выбор даты">
+              <img src="img/calendar.svg" width="21" height="22" alt="Выбор даты"><span class="visually-hidden">Выбор даты</span>
             </button>
 
             <label for="departure-date">Дата выезда:</label>
@@ -115,7 +117,7 @@
               <img src="img/plus-button.svg" width="11" height="11" alt="Увеличить">
             </button>
             <input class="searching-item" name="adults-number" id="adults-number" type="text" placeholder="2">
-            <buttoln cass="minus-button" type="button">
+            <button cass="minus-button" type="button">
               <img src="img/minus-button.svg" width="12" height="3" alt="Уменьшить">
             </button>
 
@@ -128,7 +130,7 @@
               <img src="img/minus-button.svg" width="12" height="3" alt="Уменьшить">
             </button>
 
-            <label for="search-button"><span class="visually-hidden">Найти</span></label>
+
             <input class="search-button" id="search-button" type="submit" value="Найти">
           </fieldset>
         </form>

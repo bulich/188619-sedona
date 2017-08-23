@@ -1,25 +1,247 @@
 body {
- font-size: 14px;
- line-height: 100%;
- color:#000000;
- font-weight: bold;
- font-family: Arial, Verdana, sans-serif;
-}
+  margin: 0;
+  padding: 0;
 
-.features h3 {
- font-size: 30px;
- line-height: 100%;
- color:#000000;
- font-weight: bold;
-}
+  background-color: #ffffff;
 
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+
+}
 .visually-hidden {
- position: absolute;
- width: 1px;
- height: 1px;
- margin: -1px;
- border: 0;
- padding: 0;
- clip: rect(0 0 0 0);
- overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  font-weight:bold;
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #81b3d2;
+}
+
+.site-navigation a:active {
+  color: #dbdbdb;
+}
+
+.intro {
+  background-image:
+    url("../img/intro-mask.svg"),
+    url("../img/background-intro.jpg");
+  background-repeat:no-repeat;
+  background-position: 50% 50%, 50% 90%;
+  background-color: #85b9d8;
+}
+
+.intro-information {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight:bold;
+  text-align:center;
+  color: #000000;
+}
+
+.features-preview {
+  font-size: 14px;
+  line-height: 26px;
+  text-align:center;
+  color: #333333;
+}
+
+.features-fact {
+  background-color: #81b3d2;
+}
+
+.features-fact {
+  font-size: 14px;
+  line-height: 21px;
+  text-align:center;
+  color: #ffffff;
+}
+
+.features-fact h3 {
+  font-size: 21px;
+  font-weight:bold;
+}
+
+.facilities-list,
+.features-list {
+  font-size: 14px;
+  line-height: 21px;
+  text-align:center;
+  color: #333333;
+
+  list-style: none;
+}
+
+.facilities-list h3,
+.features-list h3 {
+  font-size: 21px;
+  font-weight: bold;
+  color:#000000;
+}
+
+.features-list {
+background-color: #eeeeee;
+}
+
+.searching-info {
+  font-size: 14px;
+  line-height: 24px;
+  text-align:center;
+  color: #333333;
+}
+
+.searching-info h2 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+  color:#000000;
+}
+
+.searching-button {
+  width: 568px;
+  height:86px;
+
+  font-family:inherit;
+  text-transform:inherit;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #766357;
+  text-align:center;
+  vertical-align:center;
+
+  border: none;
+  outline:none;
+}
+
+.searching-button:hover,
+.searching-button:focus {
+  background-color:#604e43;
+}
+
+.searching-button:active {
+  background-color: #503e33;
+  color: #928a85;
+}
+
+
+.searching-form fieldset {
+  border: none;
+}
+
+.searching-form label {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  color:#000000;
+}
+
+.searching-form input[type="text"] {
+  font-family:inherit;
+  text-transform:inherit;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+
+  background-color:#f2f2f2;
+  border: none;
+  outline:none;
+
+}
+
+.searching-form input[type="text"]:focus {
+  background-color: transparent;
+  border: 2px solid #f2f2f2;
+}
+
+
+
+
+.search-button {
+  width: 458px;
+  height:58px;
+
+  font-family:inherit;
+  text-transform:inherit;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #81b3d2;
+  text-align:center;
+  vertical-align:center;
+
+  border: none;
+  outline:none;
+}
+
+.search-button:hover,
+.search-button:focus {
+  background-color:#669ec0;
+}
+
+.search-button:active {
+  background-color: #5496bd;
+  color: #94b9d2;
+}
+
+.main-footer {
+  background-color: #ffffff;
+}
+
+.main-footer b {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color:#000000;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+.main-footer .social-button {
+  width: 46px;
+  height:48px;
+  background-color: #81b3d2;
+}
+
+.dev-info span {
+  font-size: 14px;
+  line-height: 26px;
+  color:#000000;
 }
