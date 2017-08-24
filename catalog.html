@@ -2,14 +2,16 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
+<meta charset="utf-8">
   <title>HTML Academy: Sedona</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <meta name="keywords" content="sedona, седона, аризона, поиск жилья">
   <meta name="description" content="Информационный сайт города Седона, штат Аризона.">
-  <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="hotels-page">
   <header class="main-header">
     <nav class="main-navigation">
       <ul class="site-navigation left">
@@ -75,24 +77,24 @@
         <span>Сортировка:</span>
         <ul>
           <li class="current-type">
-            <button class="sort-button">По цене</button>
+            <a href="#" class="sort-button">По цене</a>
           </li>
           <li>
-            <button class="sort-button">По типу</button>
+            <a href="#" class="sort-button">По типу</a>
           </li>
           <li>
-            <button class="sort-button">По рейтингу</button>
+            <a href="#" class="sort-button">По рейтингу</a>
           </li>
         </ul>
       </div>
 
       <div class="discending-by">
-        <button class="desc" type="button">
+        <a class="desc" href="#">
           <img src="img/icon-up-dir.svg" width="11" height="10" alt="По возрастанию">
-        </button>
-        <button class="asc" type="button">
+        </a>
+        <a class="asc" href="#">
           <img src="img/icon-down-dir.svg" width="11" height="10" alt="По убыванию">
-        </button>
+        </a>
       </div>
     </section>
 

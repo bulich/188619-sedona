@@ -24,6 +24,8 @@ body {
   overflow: hidden;
 }
 
+
+
 a {
   text-decoration: none;
 }
@@ -53,6 +55,169 @@ a {
 .site-navigation a:active {
   color: #dbdbdb;
 }
+
+/*----------------------------СТИЛИЗАЦИЯ ВНУТРЕННЕЙ СТРАНИЦЫ----------------*/
+
+.current-page a {
+  color:#766357;
+}
+
+.filter {
+  background-image: url("../img/filter-background.jpg");
+  background-color:#4279a2;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter label,
+.filter legend {
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.filter legend {
+  font-weight:bold;
+}
+
+.filter input[type="text"] {
+  font-family:inherit;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #ffffff;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  outline:none;
+}
+
+.show-button {
+  width: 137px;
+  height:36px;
+
+  font-family: inherit;
+  text-transform:uppercase;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  outline:none;
+}
+
+.show-button:hover {
+  color: transparent;
+  text-shadow: 0 0 0 #ffffff;
+  background-color: #ffffff;
+}
+
+.search-result-number {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight:bold;
+  color: #000000;
+}
+
+.sort-type span {
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.sort-type ul {
+  list-style: none;
+}
+
+.sort-type a,
+.sort-type a:visited {
+  font-size: 12px;
+  line-height: 18px;
+  color: #cacaca;
+  border-bottom: 1px dashed #81b3d2;
+}
+
+.sort-type a:hover,
+.sort-type a:focus {
+  color: #81b3d2;
+}
+
+.current-type a,
+.current-type a:visited {
+  color: #81b3d2;
+  text-decoration: none;
+  border-bottom:none;
+}
+
+.search-results ul {
+  list-style: none;
+}
+
+.hotels-item h3,
+.hotels-item a:visited {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight:bold;
+  color: #000000;
+}
+
+.hotel-type,
+.hotel-price {
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+
+a.hotel-info,
+a.hotel-reserv,
+a.hotel-info:visited,
+a.hotel-reserv:visited {
+  font-size: 14px;
+  line-height: 21px;
+  color:#ffffff;
+  font-weight:bold;
+  text-align: center;
+}
+
+a.hotel-info,
+a.hotel-info:visited {
+ background-color:#81b3d2;
+}
+
+a.hotel-info:focus,
+a.hotel-info:hover {
+  background-color:#669ec0;
+}
+
+a.hotel-info:active {
+  color: #94b9d2;
+  background-color:#5496bd;
+}
+
+a.hotel-reserv,
+a.hotel-reserv:visited {
+ background-color:#766357;
+}
+
+a.hotel-reserv:focus,
+a.hotel-reserv:hover {
+  background-color:#604e43;
+}
+
+a.hotel-reserv:active {
+  color: #928a85;
+  background-color:#503e33;
+}
+
+span.rating {
+  color: #666666;
+  background-color: #f2f2f2;
+}
+/*----------------------------------------------------------------------------*/
 
 .intro {
   background-image:
