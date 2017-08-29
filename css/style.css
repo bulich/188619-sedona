@@ -221,26 +221,27 @@ span.rating {
 /*----------------------------------------------------------------------------*/
 
 .intro {
-  min-height: 510px;
+  height: 505px;
   width: 100%;
 
   background-image: url("../img/background-intro.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 0 -56px;
   background-color: #85b9d8;
+  padding-top: 1px;
+
 }
 
 .greetings-image {
   margin-left:370px;
   margin-top: 75px;
-
 }
 
 .greetings-image::after {
   content: "";
 
   margin-left: -370px;
-  margin-top: 100px;
+  margin-top: 21px;
   display: block;
 
   width: 1200px;
@@ -248,8 +249,8 @@ span.rating {
 
   background-image: url("../img/intro-mask.svg");
   background-repeat: no-repeat;
-  background-color: transparent;
 }
+
 
 .intro-information {
   font-size: 21px;
@@ -481,4 +482,110 @@ span.rating {
 
 .site-navigation-right li:first-child {
   padding-left: 150px;
+}
+
+.features {
+  display: flex;
+  flex-wrap:  wrap;
+}
+
+.features-description {
+  height: 218px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro-information  {
+  display: inline-block;
+  margin-top: 25px;
+  align-self: center;
+  width: 450px;
+  height:50px;
+}
+
+.features-preview {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.features-fact {
+  widows: 100%;
+  display: flex;
+}
+
+.features-fact img {
+  display: inline-block;
+  width: 66%;
+}
+
+.features-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 52px;
+}
+
+.features-text-container h3 {
+  width: 150px;
+  align-self: center;
+  margin-top: -35px;
+}
+
+.features-text-container p {
+  margin-bottom: -20px;
+}
+
+.features-fact-second {
+  flex-direction: row-reverse;
+}
+
+
+
+.facilities-list {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+}
+
+
+.facilities-list li {
+  width: 320px;
+  padding-right: 80px;
+  padding-bottom: 5px;
+}
+
+.facilities-item p {
+
+  width: 285px;
+}
+
+.features-list {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 255px;
+  margin: 0;
+  padding: 0;
+}
+
+.features-list li {
+  width: 400px;
+  padding-right: 0px;
+  padding-bottom: 5px;
+}
+
+.features-item p {
+  margin: 0 auto;
+  width: 269px;
+  margin-bottom: -45px;
+}
+
+.features-item h3 {
+  margin: 0 auto;
+  width: 125px;
+  margin-top: -45px;
+
 }
