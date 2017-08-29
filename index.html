@@ -12,160 +12,163 @@
 </head>
 
 <body>
-  <header class="main-header">
-    <nav class="main-navigation">
-      <ul class="site-navigation left">
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Фото и видео</a></li>
-      </ul>
-      <img class="main-logo" src="img/logo.png" width="138" height="70" alt="Логотип Sedona">
-      <ul class="site-navigation right">
-        <li><a href="#">Карта штата</a></li>
-        <li><a href="catalog.html">Гостиницы</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="container">
 
-  <main class="main-container">
-    <h1 class="visually-hidden">город Седона</h1>
-    <section class="intro">
-      <img class="greetings-image" src="img/intro.png" alt="Добро пожаловать в Седону" width="458" height="352">
-      <p class="intro-information">Седона- небольшой городок в Аризоне, заслуживающий большего!</p>
-    </section>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <ul class="site-navigation site-navigation-left">
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+        </ul>
+        <img class="main-logo" src="img/logo.png" width="138" height="70" alt="Логотип Sedona">
+        <ul class="site-navigation site-navigation-right">
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="catalog.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <section class="features">
-      <h2 class="visually-hidden">Приемущества Седоны</h1>
-        <p class="features-preview">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-        <div class="features-fact first">
-          <h3>Настоящий городок</h3>
-          <span class="features-number">- 1 -</span>
-          <p>Седона- не аттракцион для туристов, там течет своя жизнь</p>
-          <img class="features-photo" src="img/features-photo-1.jpg" alt="дом в Седоне" width="800" height="256">
+    <main class="main-container">
+      <section class="intro">
+        <h1 class="greetings-image">
+          <img src="img/intro.png" width="458" height="352" alt="Добро пожаловать в Седону">
+        </h1>
+      </section>
+
+      <section class="features">
+        <h2 class="visually-hidden">Приемущества Седоны</h1>
+          <p class="intro-information">Седона- небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="features-preview">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          <div class="features-fact first">
+            <h3>Настоящий городок</h3>
+            <span class="features-number">- 1 -</span>
+            <p>Седона- не аттракцион для туристов, там течет своя жизнь</p>
+            <img class="features-photo" src="img/features-photo-1.jpg" alt="дом в Седоне" width="800" height="256">
+          </div>
+
+          <ul class="facilities-list">
+            <li class="facilities-item">
+              <img src="img/icon-1.svg" alt="иконка дома" width="75" height="72">
+              <h3>Жилье</h3>
+              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+            <li class="facilities-item">
+              <img src="img/icon-2.svg" alt="иконка бургера" width="75" height="72">
+              <h3>Еда</h3>
+              <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+            </li>
+            <li class="facilities-item">
+              <img src="img/icon-3.svg" alt="иконка подарка" width="75" height="72">
+              <h3>Сувениры</h3>
+              <p>Не только китайского, но и местного производства!</p>
+            </li>
+          </ul>
+
+          <div class="features-fact second">
+            <h3>Там есть мост Дьвола</h3>
+            <span class="features-number">- 2 -</span>
+            <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
+            <img class="features-photo" src="img/features-photo-2.jpg" alt="мост Дьявола" width="800" height="256">
+          </div>
+
+          <ul class="features-list">
+            <li class="features-item">
+              <h3>Небольшая площадь</h3>
+              <span class="features-number">- 3 -</span>
+              <p>Все достопримечательности находятся очень близко</p>
+            </li>
+            <li class="features-item">
+              <h3>Красивая дорога</h3>
+              <span class="features-number">- 4 -</span>
+              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li class="features-item">
+              <h3>Мало туристов</h3>
+              <span class="features-number">- 5 -</span>
+              <p>Большинство едент в Гранд Каньон и толпится там</p>
+            </li>
+          </ul>
+      </section>
+
+      <section class="hotels-searching">
+
+        <div class="searching-info">
+          <h2>Заинтересовались?</h2>
+          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         </div>
 
-        <ul class="facilities-list">
-          <li class="facilities-item">
-            <img src="img/icon-1.svg" alt="иконка дома" width="75" height="72">
-            <h3>Жилье</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-          </li>
-          <li class="facilities-item">
-            <img src="img/icon-2.svg" alt="иконка бургера" width="75" height="72">
-            <h3>Еда</h3>
-            <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
-          </li>
-          <li class="facilities-item">
-            <img src="img/icon-3.svg" alt="иконка подарка" width="75" height="72">
-            <h3>Сувениры</h3>
-            <p>Не только китайского, но и местного производства!</p>
-          </li>
-        </ul>
-
-        <div class="features-fact second">
-          <h3>Там есть мост Дьвола</h3>
-          <span class="features-number">- 2 -</span>
-          <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
-          <img class="features-photo" src="img/features-photo-2.jpg" alt="мост Дьявола" width="800" height="256">
-        </div>
-
-        <ul class="features-list">
-          <li class="features-item">
-            <h3>Небольшая площадь</h3>
-            <span class="features-number">- 3 -</span>
-            <p>Все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="features-item">
-            <h3>Красивая дорога</h3>
-            <span class="features-number">- 4 -</span>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="features-item">
-            <h3>Мало туристов</h3>
-            <span class="features-number">- 5 -</span>
-            <p>Большинство едент в Гранд Каньон и толпится там</p>
-          </li>
-        </ul>
-    </section>
-
-    <section class="hotels-searching">
-
-      <div class="searching-info">
-        <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      </div>
-
-      <div class="searching-form">
-        <button class="searching-button">Поиск гостиницы в Седоне</button>
-        <form action="#" method="get">
-          <fieldset class="date-input">
-            <label for="arrival-date">Дата заезда:</label>
-            <input class="searching-item" name="arrival-date" id="arrival-date" type="text" placeholder="24 апреля 2017">
-            <button class="calendar-button" type="button">
+        <div class="searching-form">
+          <button class="searching-button">Поиск гостиницы в Седоне</button>
+          <form action="#" method="get">
+            <fieldset class="date-input">
+              <label for="arrival-date">Дата заезда:</label>
+              <input class="searching-item" name="arrival-date" id="arrival-date" type="text" placeholder="24 апреля 2017">
+              <button class="calendar-button" type="button">
               <img src="img/calendar.svg" width="21" height="22" alt="Выбор даты"><span class="visually-hidden">Выбор даты</span>
             </button>
 
-            <label for="departure-date">Дата выезда:</label>
-            <input class="searching-item" name="departure-date" id="departure-date" type="text" placeholder="4 июля 2017">
-            <button class="calendar-button" type="button">
+              <label for="departure-date">Дата выезда:</label>
+              <input class="searching-item" name="departure-date" id="departure-date" type="text" placeholder="4 июля 2017">
+              <button class="calendar-button" type="button">
               <img src="img/calendar.svg" width="21" height="22" alt="Выбор даты">
             </button>
-          </fieldset>
+            </fieldset>
 
-          <fieldset class="mens">
-            <label for="adults-number">Взрослые:</label>
-            <button class="plus-button" type="button">
+            <fieldset class="mens">
+              <label for="adults-number">Взрослые:</label>
+              <button class="plus-button" type="button">
               <img src="img/plus-button.svg" width="11" height="11" alt="Увеличить">
             </button>
-            <input class="searching-item" name="adults-number" id="adults-number" type="text" placeholder="2">
-            <button cass="minus-button" type="button">
+              <input class="searching-item" name="adults-number" id="adults-number" type="text" placeholder="2">
+              <button cass="minus-button" type="button">
               <img src="img/minus-button.svg" width="12" height="3" alt="Уменьшить">
             </button>
 
-            <label for="childs-number">Дети:</label>
-            <button class="plus-button" type="button">
+              <label for="childs-number">Дети:</label>
+              <button class="plus-button" type="button">
               <img src="img/plus-button.svg" width="11" height="11" alt="Увеличить">
             </button>
-            <input class="searching-item" name="childs-number" id="childs-number" type="text" placeholder="0">
-            <button class="minus-button" type="button">
+              <input class="searching-item" name="childs-number" id="childs-number" type="text" placeholder="0">
+              <button class="minus-button" type="button">
               <img src="img/minus-button.svg" width="12" height="3" alt="Уменьшить">
             </button>
 
 
-            <input class="search-button" id="search-button" type="submit" value="Найти">
-          </fieldset>
-        </form>
-      </div>
-      <img class="background-map" src="img/map.jpg" alt="Местоположение Седоны" width="1200" height="593">
-    </section>
-  </main>
+              <input class="search-button" id="search-button" type="submit" value="Найти">
+            </fieldset>
+          </form>
+        </div>
+        <img class="background-map" src="img/map.jpg" alt="Местоположение Седоны" width="1200" height="593">
+      </section>
+    </main>
 
-  <footer class="main-footer">
-    <b>#visitsedona</b>
-    <ul>
-      <li>
-        <a class="social-button" href="#">
+    <footer class="main-footer">
+      <b>#visitsedona</b>
+      <ul>
+        <li>
+          <a class="social-button" href="#">
           <img src="img/twitter.svg" width="17" height="15" alt="Twitter">
         </a>
-      </li>
-      <li>
-        <a class="social-button" href="#">
+        </li>
+        <li>
+          <a class="social-button" href="#">
           <img src="img/facebook.svg" width="17" height="15" alt="Facebook">
         </a>
-      </li>
-      <li>
-        <a class="social-button" href="#">
+        </li>
+        <li>
+          <a class="social-button" href="#">
           <img src="img/youtube.svg" width="17" height="15" alt="Youtube">
         </a>
-      </li>
-    </ul>
-    <div class="dev-info">
-      <span> Website by </span>
-      <a href="https://htmlacademy.ru/intensive" target="blank">
+        </li>
+      </ul>
+      <div class="dev-info">
+        <span> Website by </span>
+        <a href="https://htmlacademy.ru/intensive" target="blank">
         <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="html academy logo">
       </a>
-    </div>
-  </footer>
-
+      </div>
+    </footer>
+  </div>
   <script src="js/script.js"></script>
 </body>
 

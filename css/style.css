@@ -1,9 +1,8 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 
-  background-color: #ffffff;
-
+  min-width: 1200px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -11,6 +10,8 @@ body {
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
+
+  background-color: #ffffff;
 
 }
 .visually-hidden {
@@ -220,12 +221,34 @@ span.rating {
 /*----------------------------------------------------------------------------*/
 
 .intro {
-  background-image:
-    url("../img/intro-mask.svg"),
-    url("../img/background-intro.jpg");
+  min-height: 510px;
+  width: 100%;
+
+  background-image: url("../img/background-intro.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 50%, 50% 90%;
+  background-position: 0 0;
   background-color: #85b9d8;
+}
+
+.greetings-image {
+  margin-left:370px;
+  margin-top: 75px;
+
+}
+
+.greetings-image::after {
+  content: "";
+
+  margin-left: -370px;
+  margin-top: 100px;
+  display: block;
+
+  width: 1200px;
+  height: 57px;
+
+  background-image: url("../img/intro-mask.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
 }
 
 .intro-information {
@@ -409,4 +432,53 @@ span.rating {
   font-size: 14px;
   line-height: 26px;
   color: #000000;
+}
+/*------------------------------СЕТКА------------------------------*/
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-navigation {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+
+  min-height: 56px;
+}
+
+.site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: 0;
+  width: 480px;
+
+}
+
+.main-logo {
+  position: absolute;
+  display: inline-block;
+  margin-left: 531px;
+}
+
+.site-navigation-left {
+  text-align: left;
+  margin-left: 70px;
+}
+
+.site-navigation-right {
+  text-align: left;
+  margin-right: 70px;
+}
+
+.site-navigation-left li:last-child {
+  padding-right: 140px;
+}
+
+.site-navigation-right li:first-child {
+  padding-left: 150px;
 }
