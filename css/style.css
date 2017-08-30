@@ -318,96 +318,6 @@ span.rating {
   color: #000000;
 }
 
-.searching-button {
-  width: 568px;
-  height: 86px;
-
-  font-family:inherit;
-  text-transform:inherit;
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
-  color: #ffffff;
-  background-color: #766357;
-  text-align: center;
-  vertical-align: center;
-
-  border: none;
-  outline: none;
-}
-
-.searching-button:hover,
-.searching-button:focus {
-  background-color: #604e43;
-}
-
-.searching-button:active {
-  background-color: #503e33;
-  color: #928a85;
-}
-
-
-.searching-form fieldset {
-  border: none;
-}
-
-.searching-form label {
-  font-size: 21px;
-  line-height: 21px;
-  font-weight: bold;
-  color: #000000;
-}
-
-.searching-form input[type="text"] {
-  font-family: inherit;
-  text-transform: inherit;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: bold;
-  color: #000000;
-
-  background-color:#f2f2f2;
-  border: none;
-  outline: none;
-
-}
-
-.searching-form input[type="text"]:focus {
-  background-color: transparent;
-  border: 2px solid #f2f2f2;
-}
-
-
-
-
-.search-button {
-  width: 458px;
-  height: 58px;
-
-  font-family: inherit;
-  text-transform: inherit;
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
-  color: #ffffff;
-  background-color: #81b3d2;
-  text-align: center;
-  vertical-align: center;
-
-  border: none;
-  outline: none;
-}
-
-.search-button:hover,
-.search-button:focus {
-  background-color: #669ec0;
-}
-
-.search-button:active {
-  background-color: #5496bd;
-  color: #94b9d2;
-}
-
 .main-footer {
   background-color: #ffffff;
 }
@@ -511,36 +421,30 @@ span.rating {
 }
 
 .features-fact {
-  widows: 100%;
+  width: 100%;
   display: flex;
 }
 
 .features-fact img {
   display: inline-block;
-  width: 66%;
+  width: 800px;
 }
-
 .features-text-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 52px;
+  max-width: 400px;
 }
 
 .features-text-container h3 {
-  width: 150px;
-  align-self: center;
-  margin-top: -35px;
+  margin: 49px 130px 23px;
 }
 
 .features-text-container p {
-  margin-bottom: -20px;
+  margin: 20px 46px 0px;
 }
+
 
 .features-fact-second {
   flex-direction: row-reverse;
 }
-
 
 
 .facilities-list {
@@ -548,18 +452,25 @@ span.rating {
   align-items: center;
   width: 100%;
   height: 300px;
+  padding: 0px;
 }
 
-
 .facilities-list li {
-  width: 320px;
-  padding-right: 80px;
-  padding-bottom: 5px;
+  width: 400px;
+  height: 300px;
+}
+
+.facilities-item img {
+  display: inline-block;
+  margin: 45px 160px 25px;
+}
+
+.facilities-item h3 {
+  margin: 0 auto;
 }
 
 .facilities-item p {
-
-  width: 285px;
+  margin: 24px 57px 0px;
 }
 
 .features-list {
@@ -573,19 +484,193 @@ span.rating {
 
 .features-list li {
   width: 400px;
+  height: 255px;
   padding-right: 0px;
-  padding-bottom: 5px;
 }
 
 .features-item p {
-  margin: 0 auto;
-  width: 269px;
-  margin-bottom: -45px;
+  margin: 20px 65px 0px;
 }
 
 .features-item h3 {
+  margin: 50px 140px 23px;
+}
+
+.hotels-searching {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.searching-info {
+  height: 290px;
+}
+
+.searching-info h2 {
+  margin: 53px auto 25px;
+}
+
+.searching-info p {
   margin: 0 auto;
-  width: 125px;
-  margin-top: -45px;
+}
+
+.searching-form {
+  position: absolute;
+  margin: 208px 316px 0px;
+  display: flex;
+  flex-direction: column;
+  width: 568px;
+  height: 480px;
+
+  background-color: #ffffff;
+}
+
+.searching-button {
+  width: 568px;
+  height: 86px;
+
+  font-family:inherit;
+  text-transform:inherit;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #766357;
+  text-align: center;
+  vertical-align: center;
+
+  border: none;
+  outline: none;
+}
+
+.searching-button:hover,
+.searching-button:focus {
+  background-color: #604e43;
+}
+
+.searching-button:active {
+  background-color: #503e33;
+  color: #928a85;
+}
+
+.searching-form form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.searching-form p {
+  position: relative;
+  margin-bottom: 25px;
+  margin-left: 53px;
+
+
+  height: 40px;
+}
+
+.searching-form label {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.date-input-arrival {
+  margin-top: 55px;
+}
+
+.searching-form input[type="text"] {
+  height: 34px;
+  display: inline-block;
+
+  font-family: inherit;
+  text-transform: inherit;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+
+  background-color:#f2f2f2;
+  border: 2px solid transparent;
+  outline: none;
+}
+
+.searching-form button {
+  border: none;
+  outline: none;
+}
+
+.searching-form input[type="text"]:focus {
+  background-color: transparent;
+  border: 2px solid #f2f2f2;
+}
+
+
+.date-input input[type="text"] {
+  width: 295px;
+  margin-left: 21px;
+  padding-left: 13px;
+}
+
+
+
+.calendar-button {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  height: 40px;
+  width: 32px;
+  background-color:#f2f2f2;
+  background-image: url("../img/calendar.svg");
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  background-position: center;
+}
+
+
+
+
+.search-button {
+  width: 458px;
+  height: 58px;
+
+  font-family: inherit;
+  text-transform: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #81b3d2;
+  text-align: center;
+  vertical-align: center;
+
+  border: none;
+  outline: none;
+}
+
+.search-button:hover,
+.search-button:focus {
+  background-color: #669ec0;
+}
+
+.search-button:active {
+  background-color: #5496bd;
+  color: #94b9d2;
+}
+
+.mens-number {
+  display: inline-block;
+  width: 230px;
+}
+
+.mens-number input[type="text"] {
+  margin-left: 43px;
+  width: 50px;
+}
+
+.mens-number-adults {
+
+}
+
+.mens-number-childs {
 
 }
