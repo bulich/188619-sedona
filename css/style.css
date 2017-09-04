@@ -98,7 +98,13 @@ a {
 .main-logo {
   position: absolute;
   display: inline-block;
-  margin-left: 531px;
+  width: 138px;
+  height: 70px;
+
+  left: 0; 
+  right: 0; 
+  top: 0; 
+  margin: auto;
 }
 
 .intro {
@@ -113,18 +119,25 @@ a {
 }
 
 .greetings-image {
-  margin-left:370px;
-  margin-top: 75px;
-  margin-bottom: 0px;
+  position: absolute;
+  left: 0; 
+  right: 0; 
+  top: 0; 
+  bottom: 30px;
+  margin: auto;
+
+  width: 458px;
+  height: 352px;
 
 }
 
 .greetings-image::after {
   content: "";
 
-  margin-left: -370px;
-  margin-top: 21px;
-  display: block;
+  position: absolute;
+
+  bottom: -72px;
+  left: -371px;
 
   width: 1200px;
   height: 57px;
@@ -172,17 +185,27 @@ a {
 }
 
 .features-fact {
-  width: 100%;
+  width: 1200px;
+  min-height: 256px;
   display: flex;
 
-  background-color: #81b3d2;
-}
-
-.features-fact {
   font-size: 14px;
   line-height: 21px;
   text-align: center;
   color: #ffffff;
+
+  background-color: #81b3d2;
+  background-image: url("../img/features-photo-1.jpg");
+  background-size: 800px 256px;
+  background-repeat: no-repeat;
+  background-position: right;
+
+}
+
+.features-fact-right {
+  flex-direction: row-reverse;
+  background-image: url("../img/features-photo-2.jpg");
+  background-position: left;
 }
 
 .features-fact h3 {
@@ -190,14 +213,6 @@ a {
   font-weight: bold;
 }
 
-.features-fact img {
-  display: inline-block;
-  width: 800px;
-}
-
-.features-fact-second {
-  flex-direction: row-reverse;
-}
 
 .features-text-container {
   max-width: 400px;
@@ -232,11 +247,12 @@ a {
   display: flex;
   align-items: center;
   width: 100%;
-  min-height: 300px;
+  min-height: 302px;
   padding: 0px;
 }
 
 .facilities-list li {
+  position: relative;
   width: 400px;
   height: 300px;
 }
@@ -248,6 +264,51 @@ a {
 
 .facilities-item h3 {
   margin: 0 auto;
+}
+
+.facilities-item-house h3::before {
+  content: "";
+
+  display: block;
+  margin: 0 auto;
+  margin-top: 47px;
+  margin-bottom: 25px;
+
+  width: 75px;
+  height: 75px;
+
+  background-image: url("../img/icon-1.svg");
+  background-repeat: no-repeat;
+}
+
+.facilities-item-food h3::before {
+  content: "";
+
+  display: block;
+  margin: 0 auto;
+  margin-top: 47px;
+  margin-bottom: 25px;
+
+  width: 75px;
+  height: 75px;
+
+  background-image: url("../img/icon-3.svg");
+  background-repeat: no-repeat;
+}
+
+.facilities-item-souvenirs h3::before {
+  content: "";
+
+  display: block;
+  margin: 0 auto;
+  margin-top: 47px;
+  margin-bottom: 25px;
+
+  width: 75px;
+  height: 75px;
+
+  background-image: url("../img/icon-2.svg");
+  background-repeat: no-repeat;
 }
 
 .facilities-item p {
@@ -612,6 +673,9 @@ a {
 }
 
 .filter {
+  display: flex;
+  min-height: 217px;
+  
   background-image: url("../img/filter-background.jpg");
   background-color: #4279a2;
 }
@@ -665,7 +729,17 @@ a {
   background-color: #ffffff;
 }
 
+.sort-by {
+  display: flex;
+  min-height: 86px;
+}
+
 .search-result-number {
+  display: inline-block;
+
+  margin-top: 30px;
+  margin-left: 70px;
+  
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -673,13 +747,30 @@ a {
 }
 
 .sort-type span {
+  display: inline-block;
+
+  margin-left: 50px;
+  margin-top: 35px;
+
   font-size: 12px;
   line-height: 18px;
   color: #000000;
 }
 
 .sort-type ul {
+  display: flex;
+  justify-content: space-between;
+
+  margin-left: 125px;
+  margin-top: -25px;
+
+  width: 243px;
   list-style: none;
+}
+
+.discending-by {
+  margin-left: 500px;
+  margin-top: 35px;
 }
 
 .sort-type a,
