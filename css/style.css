@@ -35,6 +35,7 @@ a {
 .container {
   width: 1200px;
   margin: 0 auto;
+  box-shadow: 0px 0px 20px 0px #333;
   background-color: #ffffff;
 }
 
@@ -126,7 +127,7 @@ a {
   left: 0; 
   right: 0; 
   top: 0; 
-  bottom: 10px;
+  bottom: 5px;
   margin: auto;
 
   width: 458px;
@@ -223,11 +224,16 @@ a {
 }
 
 .features-text-container h3 {
-  margin: 49px 130px 23px;
+  margin: 47px 115px 23px;
 }
 
 .features-text-container p {
   margin: 20px 46px 0px;
+}
+
+.features-text-span {
+  letter-spacing: 1.1px;
+
 }
 
 .facilities-list,
@@ -275,8 +281,8 @@ a {
 
   display: block;
   margin: 0 auto;
-  margin-top: 47px;
-  margin-bottom: 25px;
+  margin-top: 45px;
+  margin-bottom: 27px;
 
   width: 75px;
   height: 75px;
@@ -289,7 +295,7 @@ a {
   content: "";
 
   display: block;
-  margin: 0 auto;
+  margin-left: 158px;
   margin-top: 47px;
   margin-bottom: 25px;
 
@@ -304,9 +310,9 @@ a {
   content: "";
 
   display: block;
-  margin: 0 auto;
-  margin-top: 47px;
-  margin-bottom: 25px;
+  margin-left: 167px;
+  margin-top: 44px;
+  margin-bottom: 28px;
 
   width: 75px;
   height: 75px;
@@ -341,7 +347,7 @@ a {
 }
 
 .features-item h3 {
-  margin: 50px 140px 23px;
+  margin: 48px 139px 25px;
 }
 
 .hotels-searching {
@@ -351,7 +357,7 @@ a {
 }
 
 .searching-info {
-  min-height: 295px;
+  min-height: 292px;
 
   font-size: 14px;
   line-height: 24px;
@@ -360,7 +366,7 @@ a {
 }
 
 .searching-info h2 {
-  margin: 53px auto 25px;
+  margin: 51px auto 25px;
 
   font-size: 30px;
   line-height: 36px;
@@ -378,8 +384,9 @@ a {
   display: flex;
   flex-direction: column;
   width: 568px;
-  height: 383px;
+  height: 395px;
 
+  box-shadow: 0px 7px 15px 0px rgba(0, 1, 1, 0.15); 
   background-color: #ffffff;
   top: 0;
   left: 0;
@@ -389,12 +396,13 @@ a {
 .searching-form form {
   display: flex;
   flex-wrap: wrap;
+  padding: 40px 50px;
+  align-items: center;
 }
 
 .searching-form p {
   position: relative;
-  margin-bottom: 13px;
-  margin-left: 53px;
+  margin: 14px auto;
 
 
   height: 40px;
@@ -420,12 +428,12 @@ a {
 
   background-color:#f2f2f2;
   border: 2px solid transparent;
-  outline: none;
+  
 }
 
 .searching-form button {
   border: none;
-  outline: none;
+  
 }
 
 .searching-form input[type="text"]:focus {
@@ -436,7 +444,7 @@ a {
 .searching-button {
   width: 568px;
   height: 86px;
-  margin-top: 44px;
+  margin-top: 46px;
 
   font-family:inherit;
   text-transform:inherit;
@@ -466,20 +474,20 @@ a {
 }
 
 .date-input input[type="text"] {
-  width: 330px;
+  width: 291px;
   margin-left: 21px;
-  padding-left: 13px;
+  padding-left: 11px;
+  padding-right: 40px;
 }
 
 .calendar-button {
-
-  margin-top: -40px;
-  margin-left: 422px;
-
-  display: inline-block;
   position: absolute;
   height: 40px;
   width: 32px;
+
+  top: 0;
+  bottom: 0;
+  right: 5px;
 
   background-image: url("../img/calendar.svg");
   background-repeat: no-repeat;
@@ -488,10 +496,24 @@ a {
   background-position: center;
 }
 
+.calendar-button:hover {
+  opacity: 1;
+  background-image: url("../img/calendar-hover.svg");
+}
+
+.calendar-button:active {
+  opacity: 1;
+}
+
+
 .mens-number {
-
   width: 230px;
+}
 
+.mens-number-childs label {
+ display: inline-block;
+  margin-left: 47px;
+  margin-top: 7px;
 }
 
 .mens-number-adults input[type="text"] {
@@ -503,12 +525,15 @@ a {
 }
 
 .mens-number-childs input[type="text"] {
- margin-left: 56px;
+ margin-left: 60px;
+ 
  width: 42px;
 
   text-align: center;
 
 }
+
+
 
 .mens-number button {
   font-family: inherit;
@@ -518,16 +543,28 @@ a {
 }
 
 .mens-number-childs .minus-button  {
-  margin-left: 21px;
+  left: 115px;
 }
 
 .minus-button {
   display: inline-block;
   position: absolute;
-  margin-left: 38px;
+  top: 0;
+  bottom: 0;
+  left: 115px;
   width: 35px;
   height: 40px;
   background-color:#f2f2f2;
+}
+
+.minus-button:hover,
+.plus-button:hover {
+  color: #000000;
+}
+
+.minus-button:active,
+.plus-button:active {
+  color: #81b3d2;
 }
 
 .plus-button {
@@ -539,8 +576,7 @@ a {
 }
 
 .search-button {
-  margin-top: 40px;
-  margin-left: 55px;
+  margin: 38px auto 0;
 
   width: 458px;
   height: 58px;
@@ -553,10 +589,8 @@ a {
   color: #ffffff;
   background-color: #81b3d2;
   text-align: center;
-  vertical-align: center;
 
   border: none;
-  outline: none;
 }
 
 .search-button:hover,
@@ -577,7 +611,12 @@ a {
 
 .main-footer {
   position: relative;
-  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 128px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .main-footer b {
@@ -604,7 +643,7 @@ a {
   align-items: center;
   min-height: 128px;
   width: 100%;
-  bottom: 0;
+  top: 0;
   background-color: rgba(255, 255, 255, 0.9);
 }
 
