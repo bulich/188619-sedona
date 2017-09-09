@@ -934,6 +934,7 @@ a {
   fill: #000;
 }
 
+a.discending-active,
 .discending-by a:active {
   opacity: 1;
   fill: #81b3d2;
