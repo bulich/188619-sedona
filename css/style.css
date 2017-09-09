@@ -823,6 +823,7 @@ a {
   color: inherit;
   border: none;
   background: none;
+  line-height: 1px;
 }
 
 .range-controls {
