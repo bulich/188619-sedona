@@ -649,9 +649,6 @@ a {
   fill: #bdbbbc;
 }
 
-
-/*----------------------------СТИЛИЗАЦИЯ ВНУТРЕННЕЙ СТРАНИЦЫ----------------*/
-
 .current-page a {
   color: #766357;
 }
@@ -954,11 +951,17 @@ a.discending-active,
   color: #81b3d2;
 }
 
+.sort-type a:active {
+  color: #000;
+  border: none;
+}
+
 .current-type a,
 .current-type a:visited {
   text-decoration: none;
   color: #81b3d2;
   border-bottom: none;
+  cursor: pointer;
 }
 
 .search-results ul {
@@ -1141,4 +1144,4 @@ span.rating {
 .stars-two {
   width: 42px;
 }
-/*----------------------------------------------------------------------------*/
+
